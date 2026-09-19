@@ -1,5 +1,8 @@
-const menu=document.querySelector('.menu');const nav=document.querySelector('.nav nav');menu?.addEventListener('click',()=>nav.classList.toggle('open'));
-const theme=document.querySelector('#theme');theme?.addEventListener('click',()=>{document.body.classList.toggle('dark');theme.textContent=document.body.classList.contains('dark')?'☀':'☾';localStorage.setItem('agri-theme',document.body.classList.contains('dark')?'dark':'light')});
-if(localStorage.getItem('agri-theme')==='dark'){document.body.classList.add('dark');if(theme)theme.textContent='☀'}
-const search=document.querySelector('#cropSearch');search?.addEventListener('input',e=>{const q=e.target.value.toLowerCase();document.querySelectorAll('.table .tr:not(.th)').forEach(row=>row.style.display=row.textContent.toLowerCase().includes(q)?'grid':'none')});
+const menu=document.querySelector('.menu'),nav=document.querySelector('.nav nav');menu?.addEventListener('click',()=>nav.classList.toggle('open'));
+const theme=document.querySelector('#theme');theme?.addEventListener('click',()=>{document.body.classList.toggle('dark');theme.textContent=document.body.classList.contains('dark')?'☀':'☾';localStorage.setItem('civil-theme',document.body.classList.contains('dark')?'dark':'light')});if(localStorage.getItem('civil-theme')==='dark'){document.body.classList.add('dark');if(theme)theme.textContent='☀'}
 document.querySelectorAll('.nav nav a').forEach(a=>a.addEventListener('click',()=>nav.classList.remove('open')));
+const tabs=document.querySelectorAll('.tab');tabs.forEach(tab=>tab.addEventListener('click',()=>{tabs.forEach(t=>t.classList.remove('active'));tab.classList.add('active');document.querySelectorAll('.calc-form').forEach(f=>f.classList.add('hidden'));document.getElementById(tab.dataset.type+'Form').classList.remove('hidden')}));
+const out=document.querySelector('#resultValue'),note=document.querySelector('#resultNote');
+document.querySelector('#calcBtn')?.addEventListener('click',()=>{const v=(+cl.value)*(+cw.value)*(+cd.value);out.textContent=v.toFixed(2)+' m³';note.textContent='Concrete volume before wastage.'});
+document.querySelector('#steelBtn')?.addEventListener('click',()=>{const d=+sd.value,l=+sl.value,q=+sq.value;const w=(d*d/162)*l*q;out.textContent=w.toFixed(2)+' kg';note.textContent='Approximate steel weight using d²/162.'});
+document.querySelector('#brickBtn')?.addEventListener('click',()=>{const area=(+bl.value)*(+bh.value),n=area/(+ba.value);out.textContent=Math.ceil(n)+' bricks';note.textContent='Approximate count before openings and wastage.'});
