@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Expense Tracker</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <main class="app-shell">
+    <section class="hero">
+      <div>
+        <p class="eyebrow">Day 01 Project</p>
+        <h1>Expense Tracker</h1>
+        <p class="subtitle">Track income and expenses locally in your browser.</p>
+      </div>
+      <div class="balance-card">
+        <span>Current Balance</span>
+        <strong id="balance">₹0.00</strong>
+      </div>
+    </section>
+
+    <section class="summary-grid">
+      <article class="summary income"><span>Income</span><strong id="income">₹0.00</strong></article>
+      <article class="summary expense"><span>Expenses</span><strong id="expenses">₹0.00</strong></article>
+      <article class="summary count"><span>Transactions</span><strong id="count">0</strong></article>
+    </section>
+
+    <section class="content-grid">
+      <form id="transaction-form" class="panel">
+        <h2>Add Transaction</h2>
+        <label>Title<input id="title" required maxlength="40" placeholder="e.g. Grocery shopping" /></label>
+        <label>Amount<input id="amount" required type="number" min="0.01" step="0.01" placeholder="e.g. 450" /></label>
+        <label>Type<select id="type"><option value="expense">Expense</option><option value="income">Income</option></select></label>
+        <button type="submit">Add Transaction</button>
+        <p id="message" class="message" aria-live="polite"></p>
+      </form>
+
+      <section class="panel">
+        <div class="panel-heading"><h2>Recent Transactions</h2><button id="clear-all" class="ghost" type="button">Clear all</button></div>
+        <div id="transaction-list" class="transaction-list"></div>
+        <p id="empty-state" class="empty">No transactions yet. Add your first one.</p>
+      </section>
+    </section>
+  </main>
+  <script src="script.js"></script>
+</body>
+</html>
