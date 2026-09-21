@@ -1,30 +1,6 @@
 <!doctype html>
-<html lang="en">
-<head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width,initial-scale=1">
-<title>Weather Dashboard</title>
-<link rel="stylesheet" href="style.css">
-</head>
-<body>
-<main class="app">
-  <header>
-    <div><p class="eyebrow">DAY 03 PROJECT</p><h1>Weather Dashboard</h1><p class="sub">A clean weather UI with search, current conditions and a 5-day forecast.</p></div>
-    <button id="unitBtn" class="ghost">°C / °F</button>
-  </header>
-  <section class="search">
-    <input id="cityInput" placeholder="Enter a city..." value="Salem">
-    <button id="searchBtn">Search</button>
-  </section>
-  <p id="status" class="status"></p>
-  <section class="current card">
-    <div><span id="city">Salem</span><h2><span id="temp">28</span>°<span id="unit">C</span></h2><p id="condition">Partly cloudy</p></div>
-    <div class="sun">☀️</div>
-    <div class="details"><span>💧 Humidity <b id="humidity">72%</b></span><span>💨 Wind <b id="wind">12 km/h</b></span><span>🌡️ Feels like <b id="feels">29°</b></span></div>
-  </section>
-  <section><h3>5-Day Forecast</h3><div id="forecast" class="forecast"></div></section>
-  <footer>Demo data for learning. Connect a weather API for live conditions.</footer>
-</main>
-<script src="script.js"></script>
-</body>
-</html>
+<html lang="en"><head><meta charset="UTF-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>Day 3 | Weather Dashboard</title><link rel="stylesheet" href="style.css"><style>
+.day-menu{position:fixed;top:16px;right:16px;z-index:20}.day-menu summary{cursor:pointer;background:#fff;border:1px solid #ddd;border-radius:12px;padding:10px 14px;font-weight:700;list-style:none;box-shadow:0 5px 20px #0001}.day-menu summary::-webkit-details-marker{display:none}.day-links{margin-top:8px;background:#fff;border:1px solid #ddd;border-radius:14px;padding:7px;box-shadow:0 10px 30px #0002;min-width:210px}.day-links a{display:block;padding:10px 12px;border-radius:9px;text-decoration:none;color:#222}.day-links a:hover{background:#f1f6f2}
+</style></head><body>
+<details class="day-menu"><summary>☰ Days</summary><nav class="day-links"><a href="../day-01-expense-tracker/">Day 1 — Expense Tracker</a><a href="../day-02-focus-timer/">Day 2 — Focus Timer</a><a href="../day-03-weather-dashboard/">Day 3 — Weather Dashboard</a><a href="../">FarmFlow</a></nav></details>
+<main class="app"><header><div><p class="eyebrow">DAY 03 PROJECT</p><h1>Weather Dashboard</h1><p class="sub">A clean weather UI with search, current conditions and a 5-day forecast.</p></div><button id="unitBtn" class="ghost">°C / °F</button></header><section class="search"><input id="cityInput" placeholder="Enter a city..." value="Salem"><button id="searchBtn">Search</button></section><p id="status" class="status"></p><section class="current card"><div><span id="city">Salem</span><h2><span id="temp">28</span>°<span id="unit">C</span></h2><p id="condition">Partly cloudy</p></div><div class="sun">☀️</div><div class="details"><span>💧 Humidity <b id="humidity">72%</b></span><span>💨 Wind <b id="wind">12 km/h</b></span><span>🌡️ Feels like <b id="feels">29°</b></span></div></section><section><h3>5-Day Forecast</h3><div id="forecast" class="forecast"></div></section><footer>Demo data for learning. Connect a weather API for live conditions.</footer></main><script src="script.js"></script></body></html>
