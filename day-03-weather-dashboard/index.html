@@ -1,0 +1,30 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Weather Dashboard</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<main class="app">
+  <header>
+    <div><p class="eyebrow">DAY 03 PROJECT</p><h1>Weather Dashboard</h1><p class="sub">A clean weather UI with search, current conditions and a 5-day forecast.</p></div>
+    <button id="unitBtn" class="ghost">°C / °F</button>
+  </header>
+  <section class="search">
+    <input id="cityInput" placeholder="Enter a city..." value="Salem">
+    <button id="searchBtn">Search</button>
+  </section>
+  <p id="status" class="status"></p>
+  <section class="current card">
+    <div><span id="city">Salem</span><h2><span id="temp">28</span>°<span id="unit">C</span></h2><p id="condition">Partly cloudy</p></div>
+    <div class="sun">☀️</div>
+    <div class="details"><span>💧 Humidity <b id="humidity">72%</b></span><span>💨 Wind <b id="wind">12 km/h</b></span><span>🌡️ Feels like <b id="feels">29°</b></span></div>
+  </section>
+  <section><h3>5-Day Forecast</h3><div id="forecast" class="forecast"></div></section>
+  <footer>Demo data for learning. Connect a weather API for live conditions.</footer>
+</main>
+<script src="script.js"></script>
+</body>
+</html>
