@@ -1,34 +1,6 @@
 <!doctype html>
-<html lang="en">
-<head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Focus Timer</title>
-  <link rel="stylesheet" href="style.css" />
-</head>
-<body>
-  <main class="app">
-    <section class="card">
-      <p class="eyebrow">DAY 02 PROJECT</p>
-      <h1>Focus Timer</h1>
-      <p class="subtitle">A simple Pomodoro timer for focused study sessions.</p>
-      <div class="timer" id="timer">25:00</div>
-      <div class="mode-row">
-        <button class="mode active" data-minutes="25">Focus</button>
-        <button class="mode" data-minutes="5">Short break</button>
-        <button class="mode" data-minutes="15">Long break</button>
-      </div>
-      <div class="controls">
-        <button class="primary" id="startBtn">Start</button>
-        <button id="pauseBtn">Pause</button>
-        <button id="resetBtn">Reset</button>
-      </div>
-      <div class="stats">
-        <div><strong id="sessions">0</strong><span>sessions</span></div>
-        <div><strong id="minutesDone">0</strong><span>minutes focused</span></div>
-      </div>
-    </section>
-  </main>
-  <script src="script.js"></script>
-</body>
-</html>
+<html lang="en"><head><meta charset="UTF-8"><meta name="viewport" content="width=device-width,initial-scale=1.0"><title>Day 2 | Focus Timer</title><link rel="stylesheet" href="style.css"><style>
+.day-menu{position:fixed;top:16px;right:16px;z-index:20}.day-menu summary{cursor:pointer;background:#fff;border:1px solid #ddd;border-radius:12px;padding:10px 14px;font-weight:700;list-style:none;box-shadow:0 5px 20px #0001}.day-menu summary::-webkit-details-marker{display:none}.day-links{margin-top:8px;background:#fff;border:1px solid #ddd;border-radius:14px;padding:7px;box-shadow:0 10px 30px #0002;min-width:210px}.day-links a{display:block;padding:10px 12px;border-radius:9px;text-decoration:none;color:#222}.day-links a:hover{background:#f1f6f2}
+</style></head><body>
+<details class="day-menu"><summary>☰ Days</summary><nav class="day-links"><a href="../day-01-expense-tracker/">Day 1 — Expense Tracker</a><a href="../day-02-focus-timer/">Day 2 — Focus Timer</a><a href="../day-03-weather-dashboard/">Day 3 — Weather Dashboard</a><a href="../">FarmFlow</a></nav></details>
+<main class="app"><section class="card"><p class="eyebrow">DAY 02 PROJECT</p><h1>Focus Timer</h1><p class="subtitle">A simple Pomodoro timer for focused study sessions.</p><div class="timer" id="timer">25:00</div><div class="mode-row"><button class="mode active" data-minutes="25">Focus</button><button class="mode" data-minutes="5">Short break</button><button class="mode" data-minutes="15">Long break</button></div><div class="controls"><button class="primary" id="startBtn">Start</button><button id="pauseBtn">Pause</button><button id="resetBtn">Reset</button></div><div class="stats"><div><strong id="sessions">0</strong><span>sessions</span></div><div><strong id="minutesDone">0</strong><span>minutes focused</span></div></div></section></main><script src="script.js"></script></body></html>
