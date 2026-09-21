@@ -6,17 +6,28 @@
 <meta name="description" content="All Projects — a collection of daily web projects by Pranesh.">
 <title>All Projects | Pranesh</title>
 <style>
-*{box-sizing:border-box}body{margin:0;font-family:Inter,system-ui,-apple-system,sans-serif;background:#f6f8f5;color:#13251a}.wrap{max-width:1100px;margin:auto;padding:28px 20px 60px}
-header{padding:34px 0 24px;display:flex;justify-content:space-between;align-items:center;gap:20px}.brand{font-size:24px;font-weight:800}.brand span{color:#248544}.badge{padding:9px 13px;border:1px solid #d8e2d9;border-radius:999px;background:#fff;font-size:13px}
+*{box-sizing:border-box}body{margin:0;font-family:Inter,system-ui,-apple-system,sans-serif;background:#f6f8f5;color:#13251a}.wrap{max-width:1100px;margin:auto;padding:20px 20px 60px}
+header{padding:14px 0 24px;display:flex;justify-content:space-between;align-items:center;gap:20px}.brand{font-size:24px;font-weight:800}.brand span{color:#248544}
+.menu{position:relative}.menu summary{list-style:none;cursor:pointer;padding:11px 16px;border:1px solid #d8e2d9;border-radius:12px;background:#fff;font-weight:700}.menu summary::-webkit-details-marker{display:none}.menu-list{position:absolute;right:0;top:50px;width:230px;background:#fff;border:1px solid #d8e2d9;border-radius:16px;padding:8px;box-shadow:0 15px 35px #173b2420;z-index:5}.menu-list a{display:block;padding:12px 14px;border-radius:10px;text-decoration:none;color:#13251a}.menu-list a:hover{background:#f0f6f1;color:#248544}
 .hero{background:linear-gradient(135deg,#0f3d25,#237b43);color:#fff;border-radius:28px;padding:42px;margin-bottom:30px}.eyebrow{font-size:12px;font-weight:800;letter-spacing:2px;opacity:.8}h1{font-size:clamp(38px,7vw,68px);line-height:.98;margin:12px 0 16px}.hero p{max-width:650px;font-size:18px;line-height:1.6;opacity:.9}
 .grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(250px,1fr));gap:18px}.card{display:block;background:#fff;border:1px solid #e1e8e2;border-radius:22px;padding:24px;box-shadow:0 12px 35px #173b2410;text-decoration:none;color:inherit;transition:.2s}.card:hover{transform:translateY(-4px);box-shadow:0 18px 42px #173b2420}.number{font-size:13px;font-weight:800;color:#248544}.icon{font-size:40px;margin:12px 0}h2{margin:5px 0 10px;font-size:22px}.desc{color:#607064;line-height:1.55;min-height:48px}.btn{display:inline-block;margin-top:18px;background:#248544;color:#fff;padding:12px 17px;border-radius:12px;font-weight:700}footer{text-align:center;color:#68766b;margin-top:42px;font-size:13px}
-@media(max-width:600px){header{align-items:flex-start;flex-direction:column}.hero{padding:30px 24px}}
+@media(max-width:600px){header{align-items:flex-start}.brand{font-size:20px}.hero{padding:30px 24px}.menu-list{right:0}}
 </style>
 </head>
 <body>
 <div class="wrap">
-<header><div class="brand">Pranesh <span>Projects</span></div><div class="badge">Daily Project Collection</div></header>
-<section class="hero"><div class="eyebrow">ONE PLACE • MANY PROJECTS</div><h1>All my projects,<br>in one place.</h1><p>Tap any project card to open the complete project inside its own folder.</p></section>
+<header>
+<div class="brand">Pranesh <span>Projects</span></div>
+<details class="menu"><summary>☰ Days</summary>
+<div class="menu-list">
+<a href="../day-01-expense-tracker/">Day 1 — Expense Tracker</a>
+<a href="../day-02-focus-timer/">Day 2 — Focus Timer</a>
+<a href="../day-03-weather-dashboard/">Day 3 — Weather Dashboard</a>
+<a href="../">Featured — FarmFlow</a>
+</div>
+</details>
+</header>
+<section class="hero"><div class="eyebrow">ONE PLACE • MANY PROJECTS</div><h1>All my projects,<br>in one place.</h1><p>Open the menu to choose Day 1, Day 2, Day 3, or any future daily project.</p></section>
 <section class="grid">
 <a class="card" href="../day-01-expense-tracker/"><div class="number">PROJECT 01</div><div class="icon">💰</div><h2>Expense Tracker</h2><p class="desc">Track income and expenses with a simple browser-based interface.</p><span class="btn">Open Project →</span></a>
 <a class="card" href="../day-02-focus-timer/"><div class="number">PROJECT 02</div><div class="icon">⏱️</div><h2>Focus Timer</h2><p class="desc">A focused productivity timer for study and work sessions.</p><span class="btn">Open Project →</span></a>
