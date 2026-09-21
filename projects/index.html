@@ -1,40 +1,33 @@
 <!doctype html>
 <html lang="en">
 <head>
-<meta charset="utf-8">
-<meta name="viewport" content="width=device-width,initial-scale=1">
-<meta name="description" content="All Projects — a collection of daily web projects by Pranesh.">
-<title>All Projects | Pranesh</title>
+<meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Projects | Pranesh</title>
 <style>
-*{box-sizing:border-box}body{margin:0;font-family:Inter,system-ui,-apple-system,sans-serif;background:#f6f8f5;color:#13251a}.wrap{max-width:1100px;margin:auto;padding:20px 20px 60px}
-header{padding:14px 0 24px;display:flex;justify-content:space-between;align-items:center;gap:20px}.brand{font-size:24px;font-weight:800}.brand span{color:#248544}
-.menu{position:relative}.menu summary{list-style:none;cursor:pointer;padding:11px 16px;border:1px solid #d8e2d9;border-radius:12px;background:#fff;font-weight:700}.menu summary::-webkit-details-marker{display:none}.menu-list{position:absolute;right:0;top:50px;width:230px;background:#fff;border:1px solid #d8e2d9;border-radius:16px;padding:8px;box-shadow:0 15px 35px #173b2420;z-index:5}.menu-list a{display:block;padding:12px 14px;border-radius:10px;text-decoration:none;color:#13251a}.menu-list a:hover{background:#f0f6f1;color:#248544}
-.hero{background:linear-gradient(135deg,#0f3d25,#237b43);color:#fff;border-radius:28px;padding:42px;margin-bottom:30px}.eyebrow{font-size:12px;font-weight:800;letter-spacing:2px;opacity:.8}h1{font-size:clamp(38px,7vw,68px);line-height:.98;margin:12px 0 16px}.hero p{max-width:650px;font-size:18px;line-height:1.6;opacity:.9}
-.grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(250px,1fr));gap:18px}.card{display:block;background:#fff;border:1px solid #e1e8e2;border-radius:22px;padding:24px;box-shadow:0 12px 35px #173b2410;text-decoration:none;color:inherit;transition:.2s}.card:hover{transform:translateY(-4px);box-shadow:0 18px 42px #173b2420}.number{font-size:13px;font-weight:800;color:#248544}.icon{font-size:40px;margin:12px 0}h2{margin:5px 0 10px;font-size:22px}.desc{color:#607064;line-height:1.55;min-height:48px}.btn{display:inline-block;margin-top:18px;background:#248544;color:#fff;padding:12px 17px;border-radius:12px;font-weight:700}footer{text-align:center;color:#68766b;margin-top:42px;font-size:13px}
-@media(max-width:600px){header{align-items:flex-start}.brand{font-size:20px}.hero{padding:30px 24px}.menu-list{right:0}}
+*{box-sizing:border-box}body{margin:0;font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Arial,sans-serif;color:#24292f;background:#fff}.top{height:76px;border-bottom:1px solid #d8dee4;display:flex;align-items:center;padding:0 28px;gap:22px;position:sticky;top:0;background:#fff;z-index:10}.hamb{font-size:25px;border:1px solid #d0d7de;background:#fff;border-radius:10px;width:56px;height:48px;cursor:pointer}.gh{width:46px;height:46px;border-radius:50%;background:#111;color:#fff;display:grid;place-items:center;font-size:25px;font-weight:800}.title{font-size:24px}.actions{margin-left:auto;display:flex;gap:10px}.iconbtn{width:48px;height:48px;border:1px solid #d0d7de;background:#fff;border-radius:10px;font-size:22px}.side{position:fixed;left:-290px;top:76px;width:280px;height:calc(100vh - 76px);background:#fff;border-right:1px solid #d8dee4;box-shadow:10px 0 30px #0001;transition:.2s;z-index:9;padding:20px}.side.open{left:0}.side a{display:block;text-decoration:none;color:#24292f;padding:14px;border-radius:9px;font-weight:600}.side a:hover{background:#f6f8fa}.main{max-width:900px;margin:auto;padding:28px 24px 70px}h1{font-size:34px;font-weight:500;margin:8px 0 30px}.filter{display:inline-flex;align-items:center;border:1px solid #d0d7de;border-radius:10px;padding:12px 18px;font-size:16px;margin-bottom:32px}.search{display:flex;border:1px solid #d0d7de;border-radius:10px;height:54px;overflow:hidden;margin-bottom:24px}.search span{font-size:22px;padding:13px 14px}.search input{border:0;outline:0;flex:1;font-size:17px}.section-title{font-size:30px;font-weight:500;margin:25px 0 28px}.list{border:1px solid #d8dee4;border-radius:12px;overflow:hidden}.count{padding:24px 28px;background:#f6f8fa;border-bottom:1px solid #d8dee4;font-size:18px}.project{display:flex;align-items:center;gap:18px;padding:22px 28px;border-bottom:1px solid #d8dee4;text-decoration:none;color:#24292f}.project:last-child{border-bottom:0}.project:hover{background:#f6f8fa}.projicon{width:44px;height:44px;border:1px solid #d0d7de;border-radius:8px;display:grid;place-items:center;font-size:23px}.info{flex:1}.name{font-size:19px;font-weight:600}.meta{color:#57606a;margin-top:7px;font-size:14px}.arrow{font-size:24px;color:#57606a}.day{color:#0969da}.empty{padding:30px;color:#57606a;text-align:center}footer{text-align:center;color:#57606a;padding:35px 0} @media(max-width:600px){.top{padding:0 16px;gap:12px}.title{font-size:21px}.actions{gap:5px}.main{padding:24px 20px}h1{font-size:32px}.section-title{font-size:27px}.project{padding:20px}.meta{line-height:1.4}.side{top:76px}}
 </style>
 </head>
 <body>
-<div class="wrap">
-<header>
-<div class="brand">Pranesh <span>Projects</span></div>
-<details class="menu"><summary>☰ Days</summary>
-<div class="menu-list">
-<a href="../day-01-expense-tracker/">Day 1 — Expense Tracker</a>
-<a href="../day-02-focus-timer/">Day 2 — Focus Timer</a>
-<a href="../day-03-weather-dashboard/">Day 3 — Weather Dashboard</a>
-<a href="../">Featured — FarmFlow</a>
+<header class="top"><button class="hamb" id="hamb">☰</button><div class="gh">●</div><div class="title">Projects</div><div class="actions"><button class="iconbtn" id="focus">⌕</button><button class="iconbtn">▱</button><button class="iconbtn">●</button></div></header>
+<aside class="side" id="side"><a href="./">🏠 Projects Home</a><a href="../day-01-expense-tracker/">💰 Day 1 — Expense Tracker</a><a href="../day-02-focus-timer/">⏱️ Day 2 — Focus Timer</a><a href="../day-03-weather-dashboard/">🌤️ Day 3 — Weather Dashboard</a><a href="../">🌱 FarmFlow</a></aside>
+<main class="main">
+<div class="filter">◷ &nbsp; Recently viewed &nbsp;⌄</div>
+<h1>Recently viewed</h1>
+<div class="search"><span>⌕</span><input id="search" placeholder="Search projects..." autocomplete="off"></div>
+<section class="section-title">All Projects</section>
+<div class="list" id="list">
+<div class="count"><span id="count">4</span> projects</div>
+<a class="project" data-name="day 1 expense tracker" href="../day-01-expense-tracker/"><div class="projicon">💰</div><div class="info"><div class="name"><span class="day">Day 1</span> — Expense Tracker</div><div class="meta">Pranesh • Daily Project #1</div></div><div class="arrow">›</div></a>
+<a class="project" data-name="day 2 focus timer" href="../day-02-focus-timer/"><div class="projicon">⏱️</div><div class="info"><div class="name"><span class="day">Day 2</span> — Focus Timer</div><div class="meta">Pranesh • Daily Project #2</div></div><div class="arrow">›</div></a>
+<a class="project" data-name="day 3 weather dashboard" href="../day-03-weather-dashboard/"><div class="projicon">🌤️</div><div class="info"><div class="name"><span class="day">Day 3</span> — Weather Dashboard</div><div class="meta">Pranesh • Daily Project #3</div></div><div class="arrow">›</div></a>
+<a class="project" data-name="farmflow smart agriculture" href="../"><div class="projicon">🌱</div><div class="info"><div class="name">FarmFlow</div><div class="meta">Pranesh • Smart Agriculture</div></div><div class="arrow">›</div></a>
 </div>
-</details>
-</header>
-<section class="hero"><div class="eyebrow">ONE PLACE • MANY PROJECTS</div><h1>All my projects,<br>in one place.</h1><p>Open the menu to choose Day 1, Day 2, Day 3, or any future daily project.</p></section>
-<section class="grid">
-<a class="card" href="../day-01-expense-tracker/"><div class="number">PROJECT 01</div><div class="icon">💰</div><h2>Expense Tracker</h2><p class="desc">Track income and expenses with a simple browser-based interface.</p><span class="btn">Open Project →</span></a>
-<a class="card" href="../day-02-focus-timer/"><div class="number">PROJECT 02</div><div class="icon">⏱️</div><h2>Focus Timer</h2><p class="desc">A focused productivity timer for study and work sessions.</p><span class="btn">Open Project →</span></a>
-<a class="card" href="../day-03-weather-dashboard/"><div class="number">PROJECT 03</div><div class="icon">🌤️</div><h2>Weather Dashboard</h2><p class="desc">Search demo city conditions, view a forecast and switch temperature units.</p><span class="btn">Open Project →</span></a>
-<a class="card" href="../"><div class="number">FEATURED</div><div class="icon">🌱</div><h2>FarmFlow</h2><p class="desc">Smart agriculture companion for crops, weather, market information and farming resources.</p><span class="btn">Open FarmFlow →</span></a>
-</section>
-<footer>Each project stays in its own folder. New daily projects can be added without removing older work.</footer>
-</div>
-</body>
-</html>
+<footer>One project per day • Each project stays separate</footer>
+</main>
+<script>
+const side=document.getElementById('side');document.getElementById('hamb').onclick=()=>side.classList.toggle('open');
+const input=document.getElementById('search'), items=[...document.querySelectorAll('.project')], count=document.getElementById('count');
+input.oninput=()=>{const q=input.value.toLowerCase().trim();let n=0;items.forEach(x=>{const ok=x.dataset.name.includes(q);x.style.display=ok?'flex':'none';if(ok)n++});count.textContent=n};
+document.getElementById('focus').onclick=()=>{input.focus();window.scrollTo({top:160,behavior:'smooth'})};
+</script>
+</body></html>
