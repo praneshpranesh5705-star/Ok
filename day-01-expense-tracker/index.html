@@ -1,48 +1,26 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Expense Tracker</title>
-  <link rel="stylesheet" href="styles.css" />
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>Day 1 | Expense Tracker</title>
+<link rel="stylesheet" href="styles.css" />
+<style>
+.day-menu{position:fixed;top:16px;right:16px;z-index:20}.day-menu summary{cursor:pointer;background:#fff;border:1px solid #ddd;border-radius:12px;padding:10px 14px;font-weight:700;box-shadow:0 5px 20px #0001;list-style:none}.day-menu summary::-webkit-details-marker{display:none}.day-links{margin-top:8px;background:#fff;border:1px solid #ddd;border-radius:14px;padding:7px;box-shadow:0 10px 30px #0002;min-width:210px}.day-links a{display:block;padding:10px 12px;border-radius:9px;text-decoration:none;color:#222}.day-links a:hover{background:#f1f6f2}
+</style>
 </head>
 <body>
-  <main class="app-shell">
-    <section class="hero">
-      <div>
-        <p class="eyebrow">Day 01 Project</p>
-        <h1>Expense Tracker</h1>
-        <p class="subtitle">Track income and expenses locally in your browser.</p>
-      </div>
-      <div class="balance-card">
-        <span>Current Balance</span>
-        <strong id="balance">₹0.00</strong>
-      </div>
-    </section>
-
-    <section class="summary-grid">
-      <article class="summary income"><span>Income</span><strong id="income">₹0.00</strong></article>
-      <article class="summary expense"><span>Expenses</span><strong id="expenses">₹0.00</strong></article>
-      <article class="summary count"><span>Transactions</span><strong id="count">0</strong></article>
-    </section>
-
-    <section class="content-grid">
-      <form id="transaction-form" class="panel">
-        <h2>Add Transaction</h2>
-        <label>Title<input id="title" required maxlength="40" placeholder="e.g. Grocery shopping" /></label>
-        <label>Amount<input id="amount" required type="number" min="0.01" step="0.01" placeholder="e.g. 450" /></label>
-        <label>Type<select id="type"><option value="expense">Expense</option><option value="income">Income</option></select></label>
-        <button type="submit">Add Transaction</button>
-        <p id="message" class="message" aria-live="polite"></p>
-      </form>
-
-      <section class="panel">
-        <div class="panel-heading"><h2>Recent Transactions</h2><button id="clear-all" class="ghost" type="button">Clear all</button></div>
-        <div id="transaction-list" class="transaction-list"></div>
-        <p id="empty-state" class="empty">No transactions yet. Add your first one.</p>
-      </section>
-    </section>
-  </main>
-  <script src="script.js"></script>
-</body>
-</html>
+<details class="day-menu"><summary>☰ Days</summary><nav class="day-links">
+<a href="../day-01-expense-tracker/">Day 1 — Expense Tracker</a>
+<a href="../day-02-focus-timer/">Day 2 — Focus Timer</a>
+<a href="../day-03-weather-dashboard/">Day 3 — Weather Dashboard</a>
+<a href="../">FarmFlow</a>
+</nav></details>
+<main class="app-shell">
+<section class="hero"><div><p class="eyebrow">Day 01 Project</p><h1>Expense Tracker</h1><p class="subtitle">Track income and expenses locally in your browser.</p></div><div class="balance-card"><span>Current Balance</span><strong id="balance">₹0.00</strong></div></section>
+<section class="summary-grid"><article class="summary income"><span>Income</span><strong id="income">₹0.00</strong></article><article class="summary expense"><span>Expenses</span><strong id="expenses">₹0.00</strong></article><article class="summary count"><span>Transactions</span><strong id="count">0</strong></article></section>
+<section class="content-grid">
+<form id="transaction-form" class="panel"><h2>Add Transaction</h2><label>Title<input id="title" required maxlength="40" placeholder="e.g. Grocery shopping" /></label><label>Amount<input id="amount" required type="number" min="0.01" step="0.01" placeholder="e.g. 450" /></label><label>Type<select id="type"><option value="expense">Expense</option><option value="income">Income</option></select></label><button type="submit">Add Transaction</button><p id="message" class="message" aria-live="polite"></p></form>
+<section class="panel"><div class="panel-heading"><h2>Recent Transactions</h2><button id="clear-all" class="ghost" type="button">Clear all</button></div><div id="transaction-list" class="transaction-list"></div><p id="empty-state" class="empty">No transactions yet. Add your first one.</p></section>
+</section></main><script src="script.js"></script>
+</body></html>
