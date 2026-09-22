@@ -1,0 +1,43 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>StudySprint — Focus Dashboard</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div class="app-shell">
+    <aside class="sidebar">
+      <div class="brand"><span class="brand-mark">✦</span><div><strong>StudySprint</strong><small>Focus better. Learn smarter.</small></div></div>
+      <nav>
+        <a class="nav-item active" href="#dashboard">⌂ <span>Dashboard</span></a>
+        <a class="nav-item" href="#tasks">✓ <span>Tasks</span></a>
+        <a class="nav-item" href="#stats">◔ <span>Statistics</span></a>
+      </nav>
+      <div class="sidebar-tip"><span>⚡</span><p>Small focused sessions create big progress.</p></div>
+      <a class="back-link" href="../projects/">← Back to Projects</a>
+    </aside>
+
+    <main class="content">
+      <header class="topbar"><div><p class="eyebrow">TUESDAY, SEPTEMBER 22</p><h1>Good morning, learner 👋</h1></div><button id="themeToggle" class="icon-btn" aria-label="Toggle theme">☾</button></header>
+
+      <section id="dashboard" class="hero-grid">
+        <div class="focus-card card">
+          <div class="section-label">CURRENT SESSION <span id="sessionStatus">READY</span></div>
+          <h2 id="timer">25:00</h2>
+          <p id="timerMessage">A calm 25-minute focus sprint.</p>
+          <div class="timer-actions"><button id="startBtn" class="primary-btn">Start Focus</button><button id="resetBtn" class="secondary-btn">Reset</button></div>
+          <div class="progress-track"><span id="timerProgress"></span></div>
+        </div>
+        <div class="stats-card card"><div class="section-label">TODAY'S SNAPSHOT</div><div class="snapshot-grid"><div><strong id="completedCount">0</strong><span>Tasks done</span></div><div><strong id="sessionCount">0</strong><span>Sessions</span></div><div><strong id="focusMinutes">0</strong><span>Focus mins</span></div><div><strong>72%</strong><span>Weekly goal</span></div></div><div class="quote">“Progress is built one focused block at a time.”</div></div>
+      </section>
+
+      <section id="tasks" class="section-block"><div class="section-heading"><div><p class="eyebrow">YOUR PLAN</p><h2>Today's tasks</h2></div><button id="addTaskBtn" class="outline-btn">＋ Add task</button></div><div id="taskList" class="task-list"></div></section>
+
+      <section id="stats" class="section-block"><div class="section-heading"><div><p class="eyebrow">THIS WEEK</p><h2>Focus momentum</h2></div><span class="streak-pill">🔥 4 day streak</span></div><div class="chart-card card"><div class="chart-bars" id="chartBars"></div><div class="chart-labels"><span>Mon</span><span>Tue</span><span>Wed</span><span>Thu</span><span>Fri</span><span>Sat</span><span>Sun</span></div></div></section>
+    </main>
+  </div>
+  <script src="script.js"></script>
+</body>
+</html>
